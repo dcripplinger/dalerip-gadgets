@@ -2,7 +2,7 @@
 <Module>
 	<ModulePrefs title="Content Slider" title_url="https://dalerip-gadgets.googlecode.com"
 		description="Add a content slider to your site."
-		height="930" width="360" author="dalerip">
+		height="360" width="930" author="dalerip">
 	</ModulePrefs>
 	<Content type="html"><![CDATA[
 		<style type="text/css">
@@ -232,9 +232,9 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
 		<div id="wowslider-container1">
 		<div class="ws_images"><ul>
-		<li><a href="http://www.yahoo.com"><img src="data1/images/026.jpg" alt="Mazatlan" title="Mazatlan" id="wows1_0"/></a>Go on a cruise! Visit Mazatlan! The iguanas will like you.</li>
-		<li><a href="http://www.bing.com"><img src="data1/images/imag0462.jpg" alt="Join Boy Scouts!" title="Join Boy Scouts!" id="wows1_1"/></a>Put your teamwork skills to the test.</li>
-		<li><a href="http://www.google.com"><img src="data1/images/imag0588.jpg" alt="Tired daddy" title="Tired daddy" id="wows1_2"/></a>In this episode of Questions and Mansers, David learns what makes little daughters so special. But he still doesn't get enough sleep at night.</li>
+		<li><a href="http://www.yahoo.com"><img src="https://c70911f0-a-62cb3a1a-s-sites.googlegroups.com/site/nashuayouth/026.jpg?attachauth=ANoY7cre-ipIihg2-UQgatjbR-oQbAX2XKg9WzGDi5DNuB_fU6mr2p-CAHDMlvvoti8uELRtR9E1BS36u2MwUseml863dPq0bG27OkpIcv76d1NzQJQgJZySUFF9-2GCOKaEpjAURbclnK6C_J1DKcHNUojzDkhkzRWrhe7XvSMr3SmuHOIhgF4m8mOCoX3B-rnF82OB1C63qz6rkAgCvty7m3nYfgmZnw%3D%3D&attredirects=0" alt="Mazatlan" title="Mazatlan" id="wows1_0"/></a>Go on a cruise! Visit Mazatlan! The iguanas will like you.</li>
+		<li><a href="http://www.bing.com"><img src="https://c70911f0-a-62cb3a1a-s-sites.googlegroups.com/site/nashuayouth/imag0462.jpg?attachauth=ANoY7cpVv4NTKfmkS-lgFtY0nhgCmRgJ_P6lD6lQh52NYvhZMXwxEdRnfuwbNZ3Fc7AtSOH_KP-CCLeWgmXnLZrFo0yWlSqmoyS5KtGMH1Bac5F905zS0OdjZw2G7evd2vZXGYOxQvr4OQn8IZ7D0G5tHtGJTBOQBxCou_nPpcedWymalSFvc6BAm5iV-bKw025Dnkv27PvaVnKnn4HF1JE0fvrt5-aRgw%3D%3D&attredirects=0" alt="Join Boy Scouts!" title="Join Boy Scouts!" id="wows1_1"/></a>Put your teamwork skills to the test.</li>
+		<li><a href="http://www.google.com"><img src="https://c70911f0-a-62cb3a1a-s-sites.googlegroups.com/site/nashuayouth/imag0588.jpg?attachauth=ANoY7cpLx9e-VwpH19r2jGtLGnQUlZ7t7m-dEeq2c6NqMy7PEI4WAf_6Fd7PBoh0H9Oybnq1YE_XTljhokWv0qgvqfwD-ayncxmdMDmvgCB4Ftg6AAfqWLNRnIjLKZ4DA089tdSe7eb-w5RI3DFAD7QgaLuZ8qLHikDX-aGw_XWP8iSHmXxxhRxPYxEioiXaFZTV-qqi1QsjLdbaE5IDdf1BrqVaFfvnZQ%3D%3D&attredirects=0" alt="Tired daddy" title="Tired daddy" id="wows1_2"/></a>In this episode of Questions and Mansers, David learns what makes little daughters so special. But he still doesn't get enough sleep at night.</li>
 		</ul></div>
 		<div class="ws_bullets"><div>
 		<a href="#" title="Mazatlan">1</a>
