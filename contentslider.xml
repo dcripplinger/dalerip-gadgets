@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
+	<ModulePrefs title="Content Slider" title_url="https://dalerip-gadgets.googlecode.com"
+		description="Add a content slider to your site."
+		height="930" width="360" author="dalerip">
+	</ModulePrefs>
 	<Content type="html"><![CDATA[
 		<style type="text/css">
 /*
