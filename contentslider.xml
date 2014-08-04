@@ -126,7 +126,7 @@
 #wowslider-container1 .ws_bullets a { 
 	width:11px;
 	height:11px;
-	background: url(./bullet.png) left top;
+	background: url(https://c70911f0-a-62cb3a1a-s-sites.googlegroups.com/site/nashuayouth/bullet.png?attachauth=ANoY7cpyYTEwAvSpuEWwIHBiBFWh0zeTrc1YJ_7JmYd29zxa7e393DPyTn8ILQPgV-XXaDnWiVAtadgyty7FII31b0_sfFIqWjonLYA8H97NYVA3hxg6vg62Oiz8lQTvHYFbDjSJ7HaTKNzKWD7qwOfryOxOL0rM7K0w3JsIlVoOXHbsbHfz3rUaNE3syaOcIL7tHPi1DEwNd91F6CCvvI-llYeuQNVdXg%3D%3D&attredirects=0) left top;
 	float: left; 
 	text-indent: -4000px; 
 	position:relative;
@@ -147,7 +147,7 @@
 	z-index:60;
 	height: 4.5em;
 	width: 4.5em;
-	background-image: url(./arrows.png);
+	background-image: url(https://c70911f0-a-62cb3a1a-s-sites.googlegroups.com/site/nashuayouth/arrows.png?attachauth=ANoY7cpPOP_KWo55_3AAN4FC-aeHA_IdF7Jvjzn1bk29lvqcPMcZnFMDGLoCp7_tHleDECDxrY4uuUMnuCuxo5cACZOq9UmmoQfnzI_IeyGdkis0TyrAv2oOsdu6PtOMAAjLZHqn9Q6VSQQlhJAOZHrA9MDnT7dIZ8iDN6JZUw7-Otu-XTUTpfcrerG5l9suJaXJB6OqCnhq0glJOegNAcwc3p2bYOra6Q%3D%3D&attredirects=0);
 	opacity: 0.8;	
 	background-size: 200%;
 }
