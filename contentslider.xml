@@ -258,30 +258,30 @@
 		</div>	
 		<script type="text/javascript">
 
-//var prefs = new gadgets.Prefs();
-//document.getElementsByClassName("img1Target")[0].href = prefs.getString("imagetarget1");
-//var elem = document.getElementsByClassName("img1")[0]
-//elem.src = prefs.getString("image1");
-//elem.alt = prefs.getString("imagetitle1");
-//elem.title = prefs.getString("imagetitle1");
-//document.getElementsByClassName("img1Caption")[0].innerHTML = prefs.getString("imagecaption1");
-//document.getElementsByClassName("img1Bullet")[0].title = prefs.getString("imagetitle1");
+var prefs = new gadgets.Prefs();
+document.getElementsByClassName("img1Target")[0].href = prefs.getString("imagetarget1");
+var elem = document.getElementsByClassName("img1")[0]
+elem.src = prefs.getString("image1");
+elem.alt = prefs.getString("imagetitle1");
+elem.title = prefs.getString("imagetitle1");
+document.getElementsByClassName("img1Caption")[0].innerHTML = prefs.getString("imagecaption1");
+document.getElementsByClassName("img1Bullet")[0].title = prefs.getString("imagetitle1");
 
-//document.getElementsByClassName("img2Target")[0].href = prefs.getString("imagetarget2");
-//var elem = document.getElementsByClassName("img2")[0]
-//elem.src = prefs.getString("image2");
-//elem.alt = prefs.getString("imagetitle2");
-//elem.title = prefs.getString("imagetitle2");
-//document.getElementsByClassName("img2Caption")[0].innerHTML = prefs.getString("imagecaption2");
-//document.getElementsByClassName("img2Bullet")[0].title = prefs.getString("imagetitle2");
+document.getElementsByClassName("img2Target")[0].href = prefs.getString("imagetarget2");
+var elem = document.getElementsByClassName("img2")[0]
+elem.src = prefs.getString("image2");
+elem.alt = prefs.getString("imagetitle2");
+elem.title = prefs.getString("imagetitle2");
+document.getElementsByClassName("img2Caption")[0].innerHTML = prefs.getString("imagecaption2");
+document.getElementsByClassName("img2Bullet")[0].title = prefs.getString("imagetitle2");
 
-//document.getElementsByClassName("img3Target")[0].href = prefs.getString("imagetarget3");
-//var elem = document.getElementsByClassName("img3")[0]
-//elem.src = prefs.getString("image3");
-//elem.alt = prefs.getString("imagetitle3");
-//elem.title = prefs.getString("imagetitle3");
-//document.getElementsByClassName("img3Caption")[0].innerHTML = prefs.getString("imagecaption3");
-//document.getElementsByClassName("img3Bullet")[0].title = prefs.getString("imagetitle3");
+document.getElementsByClassName("img3Target")[0].href = prefs.getString("imagetarget3");
+var elem = document.getElementsByClassName("img3")[0]
+elem.src = prefs.getString("image3");
+elem.alt = prefs.getString("imagetitle3");
+elem.title = prefs.getString("imagetitle3");
+document.getElementsByClassName("img3Caption")[0].innerHTML = prefs.getString("imagecaption3");
+document.getElementsByClassName("img3Bullet")[0].title = prefs.getString("imagetitle3");
 
 // -----------------------------------------------------------------------------------
 // http://wowslider.com/
