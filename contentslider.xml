@@ -244,9 +244,9 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
 		<div id="wowslider-container1">
 		<div class="ws_images"><ul>
-		<li><a class=img1Target href="#" target="_top"><img class=img1 src="#" alt=" " title=" " id="wows1_0"/></a><p class=img1Caption> </p></li>
-		<li><a class=img2Target href="#" target="_top"><img class=img2 src="#" alt=" " title=" " id="wows1_1"/></a><p class=img2Caption> </p></li>
-		<li><a class=img3Target href="#" target="_top"><img class=img3 src="#" alt=" " title=" " id="wows1_2"/></a><p class=img3Caption> </p></li>
+		<li><a class=img1Target href="#" target="_blank"><img class=img1 src="#" alt=" " title=" " id="wows1_0"/></a><p class=img1Caption> </p></li>
+		<li><a class=img2Target href="#" target="_blank"><img class=img2 src="#" alt=" " title=" " id="wows1_1"/></a><p class=img2Caption> </p></li>
+		<li><a class=img3Target href="#" target="_blank"><img class=img3 src="#" alt=" " title=" " id="wows1_2"/></a><p class=img3Caption> </p></li>
 		</ul></div>
 		<div class="ws_bullets"><div>
 		<a class=img1Bullet href="#" title=" ">1</a>
