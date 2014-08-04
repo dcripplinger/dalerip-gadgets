@@ -4,6 +4,18 @@
 		description="Add a content slider to your site."
 		height="330" width="990" author="dalerip">
 	</ModulePrefs>
+	<UserPref name="image1" display_name="Image 1 Source URL" required="true" />
+	<UserPref name="imagetitle1" display_name="Image 1 Title" required="true" />
+	<UserPref name="imagecaption1" display_name="Image 1 Caption" required="true" />
+	<UserPref name="imagetarget1" display_name="Image 1 Target URL" required="true" />
+	<UserPref name="image2" display_name="Image 2 URL" required="true" />
+	<UserPref name="imagetitle2" display_name="Image 2 Title" required="true" />
+	<UserPref name="imagecaption2" display_name="Image 2 Caption" required="true" />
+	<UserPref name="imagetarget2" display_name="Image 2 Target URL" required="true" />
+	<UserPref name="image3" display_name="Image 3 URL" required="true" />
+	<UserPref name="imagetitle3" display_name="Image 3 Title" required="true" />
+	<UserPref name="imagecaption3" display_name="Image 3 Caption" required="true" />
+	<UserPref name="imagetarget3" display_name="Image 3 Target URL" required="true" />
 	<Content type="html"><![CDATA[
 		<base target="_parent" />
 		<style type="text/css">
@@ -233,18 +245,42 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
 		<div id="wowslider-container1">
 		<div class="ws_images"><ul>
-		<li><a href="/contact-us"><img src="https://c70911f0-a-62cb3a1a-s-sites.googlegroups.com/site/nashuayouth/026.jpg?attachauth=ANoY7cre-ipIihg2-UQgatjbR-oQbAX2XKg9WzGDi5DNuB_fU6mr2p-CAHDMlvvoti8uELRtR9E1BS36u2MwUseml863dPq0bG27OkpIcv76d1NzQJQgJZySUFF9-2GCOKaEpjAURbclnK6C_J1DKcHNUojzDkhkzRWrhe7XvSMr3SmuHOIhgF4m8mOCoX3B-rnF82OB1C63qz6rkAgCvty7m3nYfgmZnw%3D%3D&attredirects=0" alt="Mazatlan" title="Mazatlan" id="wows1_0"/></a>Go on a cruise! Visit Mazatlan! The iguanas will like you.</li>
-		<li><a href="http://www.nashuastakeyouth.org/contact-us"><img src="https://c70911f0-a-62cb3a1a-s-sites.googlegroups.com/site/nashuayouth/imag0462.jpg?attachauth=ANoY7cpVv4NTKfmkS-lgFtY0nhgCmRgJ_P6lD6lQh52NYvhZMXwxEdRnfuwbNZ3Fc7AtSOH_KP-CCLeWgmXnLZrFo0yWlSqmoyS5KtGMH1Bac5F905zS0OdjZw2G7evd2vZXGYOxQvr4OQn8IZ7D0G5tHtGJTBOQBxCou_nPpcedWymalSFvc6BAm5iV-bKw025Dnkv27PvaVnKnn4HF1JE0fvrt5-aRgw%3D%3D&attredirects=0" alt="Join Boy Scouts!" title="Join Boy Scouts!" id="wows1_1"/></a>Put your teamwork skills to the test.</li>
-		<li><a href="https://sites.google.com/site/nashuayouth/contact-us"><img src="https://c70911f0-a-62cb3a1a-s-sites.googlegroups.com/site/nashuayouth/imag0588.jpg?attachauth=ANoY7cpLx9e-VwpH19r2jGtLGnQUlZ7t7m-dEeq2c6NqMy7PEI4WAf_6Fd7PBoh0H9Oybnq1YE_XTljhokWv0qgvqfwD-ayncxmdMDmvgCB4Ftg6AAfqWLNRnIjLKZ4DA089tdSe7eb-w5RI3DFAD7QgaLuZ8qLHikDX-aGw_XWP8iSHmXxxhRxPYxEioiXaFZTV-qqi1QsjLdbaE5IDdf1BrqVaFfvnZQ%3D%3D&attredirects=0" alt="Tired daddy" title="Tired daddy" id="wows1_2"/></a>In this episode of Questions and Mansers, David learns what makes little daughters so special. But he still doesn't get enough sleep at night.</li>
+		<li><a class=img1Target href="#"><img class=img1 src="#" alt=" " title=" " id="wows1_0"/></a><p class=img1Caption> </p></li>
+		<li><a class=img2Target href="#"><img class=img2 src="#" alt=" " title=" " id="wows1_1"/></a><p class=img2Caption> </p></li>
+		<li><a class=img3Target href="#"><img class=img3 src="#" alt=" " title=" " id="wows1_2"/></a><p class=img3Caption> </p></li>
 		</ul></div>
 		<div class="ws_bullets"><div>
-		<a href="#" title="Mazatlan">1</a>
-		<a href="#" title="Join Boy Scouts!">2</a>
-		<a href="#" title="Tired daddy">3</a>
+		<a class=img1Bullet href="#" title=" ">1</a>
+		<a class=img2Bullet href="#" title=" ">2</a>
+		<a class=img3Bullet href="#" title=" ">3</a>
 		</div></div>
 		<div class="ws_shadow"></div>
 		</div>	
 		<script type="text/javascript">
+
+var prefs = new gadgets.Prefs();
+document.getElementsByClassName("img1Target")[0].href = prefs.getString("imagetarget1");
+var elem = document.getElementsByClassName("img1")[0]
+elem.src = prefs.getString("image1");
+elem.alt = prefs.getString("imagetitle1");
+elem.title = prefs.getString("imagetitle1");
+document.getElementsByClassName("img2Caption")[0].innerHTML = prefs.getString("imagecaption2");
+document.getElementsByClassName("img2Bullet")[0].title = prefs.getString("imagetitle2");
+document.getElementsByClassName("img2Target")[0].href = prefs.getString("imagetarget2");
+var elem = document.getElementsByClassName("img2")[0]
+elem.src = prefs.getString("image2");
+elem.alt = prefs.getString("imagetitle2");
+elem.title = prefs.getString("imagetitle2");
+document.getElementsByClassName("img2Caption")[0].innerHTML = prefs.getString("imagecaption2");
+document.getElementsByClassName("img2Bullet")[0].title = prefs.getString("imagetitle2");
+document.getElementsByClassName("img3Target")[0].href = prefs.getString("imagetarget3");
+var elem = document.getElementsByClassName("img3")[0]
+elem.src = prefs.getString("image3");
+elem.alt = prefs.getString("imagetitle3");
+elem.title = prefs.getString("imagetitle3");
+document.getElementsByClassName("img3Caption")[0].innerHTML = prefs.getString("imagecaption3");
+document.getElementsByClassName("img3Bullet")[0].title = prefs.getString("imagetitle3");
+
 // -----------------------------------------------------------------------------------
 // http://wowslider.com/
 // JavaScript Wow Slider is a free software that helps you easily generate delicious 
