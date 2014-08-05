@@ -64,7 +64,7 @@
 			var elem = document.getElementsByClassName("img2")[0]
 			elem.src = prefs.getString("image2");
 			elem.title = prefs.getString("imagetitle2");
-			document.getElementsByClassName("img2Caption")[0].innerHTML = prefs.getString("imagecaption");
+			document.getElementsByClassName("img2Caption")[0].innerHTML = prefs.getString("imagecaption2");
 			document.getElementsByClassName("img3Target")[0].href = prefs.getString("imagetarget3");
 			var elem = document.getElementsByClassName("img3")[0]
 			elem.src = prefs.getString("image3");
