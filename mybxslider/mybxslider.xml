@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+	<ModulePrefs
+		title="Content Slider"
+		title_url="https://dalerip-gadgets.googlecode.com"
+		description="Add a content slider to your site."
+		height="330"
+		width="990"
+		author="dalerip"
+	/>
+	
+	<UserPref name="image1" display_name="Image 1 Source URL" required="true" />
+	<UserPref name="imagetitle1" display_name="Image 1 Title" required="true" />
+	<UserPref name="imagecaption1" display_name="Image 1 Caption" required="true" />
+	<UserPref name="imagetarget1" display_name="Image 1 Target URL" required="true" />
+	
+	<UserPref name="image2" display_name="Image 2 URL" required="true" />
+	<UserPref name="imagetitle2" display_name="Image 2 Title" required="true" />
+	<UserPref name="imagecaption2" display_name="Image 2 Caption" required="true" />
+	<UserPref name="imagetarget2" display_name="Image 2 Target URL" required="true" />
+	
+	<UserPref name="image3" display_name="Image 3 URL" required="true" />
+	<UserPref name="imagetitle3" display_name="Image 3 Title" required="true" />
+	<UserPref name="imagecaption3" display_name="Image 3 Caption" required="true" />
+	<UserPref name="imagetarget3" display_name="Image 3 Target URL" required="true" />
+	
+	<Content type="html"><![CDATA[
+		<!-- head content -->
+		<!-- jQuery library (served from Google) -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<!-- bxSlider Javascript file -->
+		<script src="js/jquery.bxslider.min.js"></script>
+		<!-- bxSlider CSS file -->
+		<link href="lib/jquery.bxslider.css" rel="stylesheet" />
+		<!-- If embedded, make link targets _top -->
+		<base target="_top" />
+		
+		<!-- body content -->
+		<ul class="bxslider">
+			<li>
+				<a class="img1Target" href="#"><img class="img1" src="#" title=" " /></a>
+				<div class="caption"><span class="img1Caption"></span></div>
+			</li>
+			<li>
+				<a class="img2Target" href="#"><img class="img2" src="#" title=" " /></a>
+				<div class="caption"><span class="img2Caption"></span></div>
+			</li>
+			<li>
+				<a class="img3Target" href="#"><img class="img3" src="#" title=" " /></a>
+				<div class="caption"><span class="img3Caption"></span></div>
+			</li>
+		</ul>
+		
+		<!-- js content -->
+		<script type="text/javascript">
+			<!-- load user prefs -->
+			var prefs = new gadgets.Prefs();
+			document.getElementsByClassName("img1Target")[0].href = prefs.getString("imagetarget1");
+			var elem = document.getElementsByClassName("img1")[0]
+			elem.src = prefs.getString("image1");
+			elem.title = prefs.getString("imagetitle1");
+			document.getElementsByClassName("img1Caption")[0].innerHTML = prefs.getString("imagecaption1");
+			document.getElementsByClassName("img2Target")[0].href = prefs.getString("imagetarget2");
+			var elem = document.getElementsByClassName("img2")[0]
+			elem.src = prefs.getString("image2");
+			elem.title = prefs.getString("imagetitle2");
+			document.getElementsByClassName("img2Caption")[0].innerHTML = prefs.getString("imagecaption");
+			document.getElementsByClassName("img3Target")[0].href = prefs.getString("imagetarget3");
+			var elem = document.getElementsByClassName("img3")[0]
+			elem.src = prefs.getString("image3");
+			elem.title = prefs.getString("imagetitle3");
+			document.getElementsByClassName("img3Caption")[0].innerHTML = prefs.getString("imagecaption3");
+			<!-- init bxslider -->
+			$(document).ready(function(){
+				$('.bxslider').bxSlider({
+					captions: true,
+					auto: true,
+					pause: 7000,
+				});
+			});
+		</script>
+	]]></Content>
+</Module>
