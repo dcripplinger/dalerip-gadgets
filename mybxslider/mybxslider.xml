@@ -71,7 +71,7 @@
 			elem.title = prefs.getString("imagetitle3");
 			document.getElementsByClassName("img3Caption")[0].innerHTML = prefs.getString("imagecaption3");
 			<!-- init bxslider -->
-			$(document).ready(function(){
+			$(window).load(function(){
 				$('.bxslider').bxSlider({
 					captions: true,
 					auto: true,
