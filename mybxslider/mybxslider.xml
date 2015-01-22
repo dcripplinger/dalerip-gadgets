@@ -24,6 +24,11 @@
 	<UserPref name="imagecaption3" display_name="Image 3 Caption" required="true" />
 	<UserPref name="imagetarget3" display_name="Image 3 Target URL" required="true" />
 	
+	<UserPref name="image4" display_name="Image 4 URL" required="true" />
+	<UserPref name="imagetitle4" display_name="Image 4 Title" required="true" />
+	<UserPref name="imagecaption4" display_name="Image 4 Caption" required="true" />
+	<UserPref name="imagetarget4" display_name="Image 4 Target URL" required="true" />
+	
 	<Content type="html"><![CDATA[
 		<!-- head content -->
 		<!-- jQuery library (served from Google) -->
@@ -49,6 +54,10 @@
 				<a class="img3Target" href="#"><img class="img3" src="#" title=" " /></a>
 				<div class="caption"><span class="img3Caption"></span></div>
 			</li>
+			<li>
+				<a class="img4Target" href="#"><img class="img4" src="#" title=" " /></a>
+				<div class="caption"><span class="img4Caption"></span></div>
+			</li>
 		</ul>
 		
 		<!-- js content -->
@@ -70,12 +79,17 @@
 			elem.src = prefs.getString("image3");
 			elem.title = prefs.getString("imagetitle3");
 			document.getElementsByClassName("img3Caption")[0].innerHTML = prefs.getString("imagecaption3");
+			document.getElementsByClassName("img4Target")[0].href = prefs.getString("imagetarget4");
+			var elem = document.getElementsByClassName("img4")[0]
+			elem.src = prefs.getString("image4");
+			elem.title = prefs.getString("imagetitle4");
+			document.getElementsByClassName("img4Caption")[0].innerHTML = prefs.getString("imagecaption4");
 			<!-- init bxslider -->
-			$(window).load(function(){
+			$(document).ready(function(){
 				$('.bxslider').bxSlider({
 					captions: true,
 					auto: true,
-					pause: 7000,
+					pause: 4000,
 				});
 			});
 		</script>
